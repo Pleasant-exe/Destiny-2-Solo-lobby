@@ -13,7 +13,7 @@ Before trying to run the script you must allow Windows Powershell to run .ps1 fi
 
 Once promoted type "a" and hit enter. 
 
-![howto](http://mrpl.me/pc1046b_rfx3.gif
+! [howto] (http://mrpl.me/pc1046b_rfx3.gif)
 
 Once you have done that, right click the script > open with > windows powershell, don't worry if its blank, sometimes text wont load, if this is the case press any key. (if it closes this is also ok)
 
