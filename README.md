@@ -20,3 +20,5 @@ Once you have done that, right click the script > open with > windows powershell
 When disabling: http://mrpl.me/P31047b_rfs8.png
 
 When enabling: http://mrpl.me/l21048b_rff8.png
+
+Download: https://github.com/MrPleasant-exe/Destiny-2-Solo-lobby/releases
