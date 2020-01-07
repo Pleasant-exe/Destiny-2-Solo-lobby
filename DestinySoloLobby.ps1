@@ -6,31 +6,31 @@
     }
 }
 
-$rule = Get-NetFirewallRule -DisplayName "Destiny2-Solo-1" 2> $null;
+$rule = Get-NetFirewallRule -DisplayName "Destiny2-1" 2> $null;
 if ($rule) {
-    Remove-NetFirewallRule -DisplayName "Destiny2-Solo-1";
+    Remove-NetFirewallRule -DisplayName "Destiny2-1";
 } else {
-    New-NetFirewallRule -DisplayName "Destiny2-Solo-1" -Direction Outbound -LocalPort 1935,3097,3478-3480 -Protocol TCP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-1" -Direction Outbound -LocalPort 1935,3097,3478-3480 -Protocol TCP -Action Block;
 }
-$rule = Get-NetFirewallRule -DisplayName "Destiny2-Solo-2" 2> $null;
+$rule = Get-NetFirewallRule -DisplayName "Destiny2-2" 2> $null;
 if ($rule) {
-    Remove-NetFirewallRule -DisplayName "Destiny2-Solo-2";
+    Remove-NetFirewallRule -DisplayName "Destiny2-2";
 } else {
-    New-NetFirewallRule -DisplayName "Destiny2-Solo-2" -Direction Outbound -LocalPort 1935,3097,3478-3480 -Protocol UDP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-2" -Direction Outbound -LocalPort 1935,3097,3478-3480 -Protocol UDP -Action Block;
 }
-$rule = Get-NetFirewallRule -DisplayName "Destiny2-Solo-3" 2> $null;
+$rule = Get-NetFirewallRule -DisplayName "Destiny2-3" 2> $null;
 if ($rule) {
-    Remove-NetFirewallRule -DisplayName "Destiny2-Solo-3";
+    Remove-NetFirewallRule -DisplayName "Destiny2-3";
 } else {
-    New-NetFirewallRule -DisplayName "Destiny2-Solo-3" -Direction Inbound -LocalPort 1935,3097,3478-3480 -Protocol TCP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-3" -Direction Inbound -LocalPort 1935,3097,3478-3480 -Protocol TCP -Action Block;
 }
-$rule = Get-NetFirewallRule -DisplayName "Destiny2-Solo-4" 2> $null;
+$rule = Get-NetFirewallRule -DisplayName "Destiny2-4" 2> $null;
 if ($rule) {
-    Remove-NetFirewallRule -DisplayName "Destiny2-Solo-4";
+    Remove-NetFirewallRule -DisplayName "Destiny2-4";
 } else {
-    New-NetFirewallRule -DisplayName "Destiny2-Solo-4" -Direction Inbound -LocalPort 1935,3097,3478-3480 -Protocol UDP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-4" -Direction Inbound -LocalPort 1935,3097,3478-3480 -Protocol UDP -Action Block;
 }
 
-Write-Host "Successful"
+Write-Host "Successful, stay safe Guardian."
 Write-Host "Press any key to exit"
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
