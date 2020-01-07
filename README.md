@@ -22,3 +22,5 @@ When disabling: http://mrpl.me/P31047b_rfs8.png
 When enabling: http://mrpl.me/l21048b_rff8.png
 
 Download: https://github.com/MrPleasant-exe/Destiny-2-Solo-lobby/releases
+
+Special thanks to various Reddit users for the specific ports etc
