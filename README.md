@@ -7,7 +7,7 @@ So you can do bounties etc alone and not with pesky people :)
 
 ## How do i use this?
 
-Before trying to run the script you must allow Windows Powershell to run .ps1 files, this can be done by oppening Powershell as admin and typing the following. [Download](https://github.com/MrPleasant-exe/Destiny-2-Solo-lobby/releases).
+Before trying to run the script you must allow Windows Powershell to run .ps1 files, this can be done by oppening Powershell as admin and typing the following. [(Download here)](https://github.com/MrPleasant-exe/Destiny-2-Solo-lobby/releases).
 
 > set-executionpolicy remotesigned
 
