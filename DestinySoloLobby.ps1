@@ -10,25 +10,25 @@ $rule = Get-NetFirewallRule -DisplayName "Destiny2-1" 2> $null;
 if ($rule) {
     Remove-NetFirewallRule -DisplayName "Destiny2-1";
 } else {
-    New-NetFirewallRule -DisplayName "Destiny2-1" -Direction Outbound -LocalPort 3000,3097,3478-3480,64295-64325,27015-27200,27000-27100 -Protocol TCP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-1" -Direction Outbound -RemotePort 3000,3097,3478-3480,64295-64325,27015-27200,27000-27100 -Protocol TCP -Action Block;
 }
 $rule = Get-NetFirewallRule -DisplayName "Destiny2-2" 2> $null;
 if ($rule) {
     Remove-NetFirewallRule -DisplayName "Destiny2-2";
 } else {
-    New-NetFirewallRule -DisplayName "Destiny2-2" -Direction Outbound -LocalPort 3000,3097,3478-3480,64295-64325,27015-27200,27000-27100 -Protocol UDP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-2" -Direction Outbound -RemotePort 3000,3097,3478-3480,64295-64325,27015-27200,27000-27100 -Protocol UDP -Action Block;
 }
 $rule = Get-NetFirewallRule -DisplayName "Destiny2-3" 2> $null;
 if ($rule) {
     Remove-NetFirewallRule -DisplayName "Destiny2-3";
 } else {
-    New-NetFirewallRule -DisplayName "Destiny2-3" -Direction Inbound -LocalPort 3000,3097,3478-3480,64295-64325,27015-27200,27000-27100 -Protocol TCP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-3" -Direction Inbound -RemotePort 3000,3097,3478-3480,64295-64325,27015-27200,27000-27100 -Protocol TCP -Action Block;
 }
 $rule = Get-NetFirewallRule -DisplayName "Destiny2-4" 2> $null;
 if ($rule) {
     Remove-NetFirewallRule -DisplayName "Destiny2-4";
 } else {
-    New-NetFirewallRule -DisplayName "Destiny2-4" -Direction Inbound -LocalPort 3000,3097,3478-3480,64295-64325,27015-27200,27000-27100 -Protocol UDP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-4" -Direction Inbound -RemotePort 3000,3097,3478-3480,64295-64325,27015-27200,27000-27100 -Protocol UDP -Action Block;
 }
 
 Write-Host "Successful, stay safe Guardian."
