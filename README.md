@@ -1,11 +1,13 @@
 # Destiny 2 matchmaking disable
 A script that allows you to disable matchmaking in Destiny 2, all this script does is adds firewall rules when first ran and if rules are already in place (second run) it will disable them and re enable match making. 
 
-Update: Make sure to do this in orbit now as it will crash your game if you try using it in other situations. 
-
 ## Why use this? 
 
 So you can do bounties etc alone and not with pesky people :) 
+
+## Before you use this please read
+
+Make sure to only use this when on Destiny 2, run the script to disable firewall rules before shutting down steam as you wont be able to launch steam online. I suggest this is used in Orbit to prevent crashing. 
 
 ## How do i use this?
 
