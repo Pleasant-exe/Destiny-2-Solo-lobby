@@ -14,6 +14,7 @@ Make sure to only use this when on Destiny 2, run the script to disable firewall
 Before trying to run the script you must allow Windows Powershell to run .ps1 files, this can be done by oppening Powershell as admin and typing the following. [(Download here)](https://github.com/MrPleasant-exe/Destiny-2-Solo-lobby/releases).
 
 > set-executionpolicy remotesigned
+
 > Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass (might be needed)
 
 Once promoted type "a" and hit enter. 
@@ -24,7 +25,7 @@ Once you have done that, right click the script > open with > windows powershell
 
 Recent report suggest this is no longer working properly with powershell, till i figure out what the cause is i suggest running it using Windows Powershell ISE which can be located:
 
-? "C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe"
+> "C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe"
 
 When disabling: http://mrpl.me/P31047b_rfs8.png
 
