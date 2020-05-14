@@ -27,6 +27,8 @@ Recent report suggest this is no longer working properly with powershell, till i
 
 > "C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe"
 
+Note: Both of the commands above still need to be ran.
+
 When disabling: http://mrpl.me/P31047b_rfs8.png
 
 When enabling: http://mrpl.me/l21048b_rff8.png
