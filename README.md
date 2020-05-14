@@ -22,6 +22,10 @@ Once promoted type "a" and hit enter.
 
 Once you have done that, right click the script > open with > windows powershell, don't worry if its blank, sometimes text wont load, if this is the case press any key. (if it closes this is also ok)
 
+Recent report suggest this is no longer working properly with powershell, till i figure out what the cause is i suggest running it using Windows Powershell ISE which can be located:
+
+? "C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe"
+
 When disabling: http://mrpl.me/P31047b_rfs8.png
 
 When enabling: http://mrpl.me/l21048b_rff8.png
