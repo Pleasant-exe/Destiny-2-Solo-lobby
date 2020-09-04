@@ -9,6 +9,8 @@ A script that allows you to disable matchmaking in Destiny 2, all this script do
 
 So you can do bounties etc alone and not with pesky people :) 
 
+#Powershell script version
+
 ## Before you use this please read
 
 Make sure to only use this when on Destiny 2, run the script to disable firewall rules before shutting down steam as you wont be able to launch steam online. I suggest this is used in Orbit to prevent crashing. 
@@ -32,6 +34,14 @@ Note: Both of the commands above still need to be ran.
 When disabling: http://mrpl.me/P31047b_rfs8.png
 
 When enabling: http://mrpl.me/l21048b_rff8.png
+
+#D2Solo exe version
+
+##How to use
+
+Simply run the exe you download from releases and select the option you want, make sure to run as admin! 
+
+#Downloads
 
 Download: https://github.com/MrPleasant-exe/Destiny-2-Solo-lobby/releases
 
