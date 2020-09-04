@@ -1,9 +1,17 @@
 # Destiny 2 matchmaking disable
-A script that allows you to disable matchmaking in Destiny 2, all this script does is adds firewall rules when first ran and if rules are already in place (second run) it will disable them and re enable match making. 
+A script that allows you to disable matchmaking in Destiny 2, all this script does is adds firewall rules when first ran and if rules are already in place (second run) it will disable them and re enable match making. There are now two versions of this, one is a powershell script and one is an exe with two buttons, both you can see how to use below.
 
 ## Why use this? 
 
 So you can do bounties etc alone and not with pesky people :) 
+
+# D2Solo exe version
+
+## How to use
+
+Simply run the exe you download from releases and select the option you want, make sure to run as admin! 
+
+![howto](https://mrpl.me/V12560b_rfn5.png)
 
 # Powershell script version
 
@@ -30,12 +38,6 @@ Note: Both of the commands above still need to be ran.
 When disabling: http://mrpl.me/P31047b_rfs8.png
 
 When enabling: http://mrpl.me/l21048b_rff8.png
-
-# D2Solo exe version
-
-## How to use
-
-Simply run the exe you download from releases and select the option you want, make sure to run as admin! 
 
 # Downloads
 
