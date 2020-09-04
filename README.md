@@ -1,7 +1,3 @@
-# Small update
-
-Im getting some help to work on an EXE version of this to make it a lot easier, you will find this in releases. 
-
 # Destiny 2 matchmaking disable
 A script that allows you to disable matchmaking in Destiny 2, all this script does is adds firewall rules when first ran and if rules are already in place (second run) it will disable them and re enable match making. 
 
