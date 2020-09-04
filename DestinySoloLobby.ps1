@@ -6,22 +6,31 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     }
 }
 
-$soloLobbyEnabled = Get-NetFirewallRule -DisplayName "Destiny2-TCP-Out" 2> $null
-
-if ($soloLobbyEnabled) {
-    $msg = "Solo Lobby Disabled!"
-    Remove-NetFirewallRule -DisplayName "Destiny2-TCP-Out";
-    Remove-NetFirewallRule -DisplayName "Destiny2-UDP-Out";
-    Remove-NetFirewallRule -DisplayName "Destiny2-TCP-In";
-    Remove-NetFirewallRule -DisplayName "Destiny2-UDP-In";
+$rule = Get-NetFirewallRule -DisplayName "Destiny2-1" 2> $null;
+if ($rule) {
+    Remove-NetFirewallRule -DisplayName "Destiny2-1";
 } else {
-    $msg = "Solo Lobby Enabled!"
-    New-NetFirewallRule -DisplayName "Destiny2-TCP-Out" -Direction Outbound -RemotePort 27000-27200,3097 -Protocol TCP -Action Block;
-    New-NetFirewallRule -DisplayName "Destiny2-UDP-Out" -Direction Outbound -RemotePort 27000-27200,3097 -Protocol UDP -Action Block;
-    New-NetFirewallRule -DisplayName "Destiny2-TCP-In"  -Direction Inbound  -RemotePort 27000-27200,3097 -Protocol TCP -Action Block;
-    New-NetFirewallRule -DisplayName "Destiny2-UDP-In"  -Direction Inbound  -RemotePort 27000-27200,3097 -Protocol UDP -Action Block;
+    New-NetFirewallRule -DisplayName "Destiny2-1" -Direction Outbound -RemotePort 27000-27200,3097 -Protocol TCP -Action Block;
+}
+$rule = Get-NetFirewallRule -DisplayName "Destiny2-2" 2> $null;
+if ($rule) {
+    Remove-NetFirewallRule -DisplayName "Destiny2-2";
+} else {
+    New-NetFirewallRule -DisplayName "Destiny2-2" -Direction Outbound -RemotePort 27000-27200,3097 -Protocol UDP -Action Block;
+}
+$rule = Get-NetFirewallRule -DisplayName "Destiny2-3" 2> $null;
+if ($rule) {
+    Remove-NetFirewallRule -DisplayName "Destiny2-3";
+} else {
+    New-NetFirewallRule -DisplayName "Destiny2-3" -Direction Inbound -RemotePort 27000-27200,3097 -Protocol TCP -Action Block;
+}
+$rule = Get-NetFirewallRule -DisplayName "Destiny2-4" 2> $null;
+if ($rule) {
+    Remove-NetFirewallRule -DisplayName "Destiny2-4";
+} else {
+    New-NetFirewallRule -DisplayName "Destiny2-4" -Direction Inbound -RemotePort 27000-27200,3097 -Protocol UDP -Action Block;
 }
 
-Write-Host $msg
+Write-Host "Successful, stay safe Guardian."
 Write-Host "Press any key to exit"
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
