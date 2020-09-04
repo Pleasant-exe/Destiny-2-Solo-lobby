@@ -9,7 +9,7 @@ A script that allows you to disable matchmaking in Destiny 2, all this script do
 
 So you can do bounties etc alone and not with pesky people :) 
 
-#Powershell script version
+# Powershell script version
 
 ## Before you use this please read
 
@@ -35,13 +35,13 @@ When disabling: http://mrpl.me/P31047b_rfs8.png
 
 When enabling: http://mrpl.me/l21048b_rff8.png
 
-#D2Solo exe version
+# D2Solo exe version
 
-##How to use
+## How to use
 
 Simply run the exe you download from releases and select the option you want, make sure to run as admin! 
 
-#Downloads
+# Downloads
 
 Download: https://github.com/MrPleasant-exe/Destiny-2-Solo-lobby/releases
 
