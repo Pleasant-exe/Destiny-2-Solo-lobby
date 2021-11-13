@@ -44,3 +44,6 @@ When enabling: http://mrpl.me/l21048b_rff8.png
 Download: https://github.com/MrPleasant-exe/Destiny-2-Solo-lobby/releases
 
 Special thanks to various Reddit users for the specific ports etc
+
+
+ <img src="https://img.shields.io/github/downloads/MrPleasant-exe/Destiny-2-Solo-lobby/total" alt="Downloads"/>
